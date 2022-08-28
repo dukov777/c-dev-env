@@ -1,0 +1,3 @@
+[submodule "project/slcan"]
+	path = project/slcan
+	url = git@github.com:dukov777/slcan.git
