@@ -51,5 +51,13 @@ CMake: Build output should look like this:
 [build] Build finished with exit code 0
 ```
 
+Run the generated executable:
+
+<img width="287" alt="image" src="https://user-images.githubusercontent.com/10469747/187062711-24662234-4a98-442e-99b5-ad08fc4bf3ea.png">
+
+
+Enjoy!
+
+
 
 
