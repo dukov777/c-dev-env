@@ -39,7 +39,9 @@ docker build --target development -t c-dev-env .
 - Follow the steps in https://code.visualstudio.com/docs/cpp/cmake-linux#_prerequisites
 
 - Install all recomended CMake extensions *inside* conteiner.
-for debuging install 
+
+- **IMPORTANT for debuging install** 
+
 `C/C++ IntelliSense, debugging, and code browsing.`
 
 
