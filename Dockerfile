@@ -32,12 +32,13 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends vim && \
     rm -rf /var/lib/apt/lists/*
 
-RUN apt-get install -y --no-install-recommends gdb && \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends gdb && \
     rm -rf /var/lib/apt/lists/*
 
-RUN apt-get install -y --no-install-recommends software-properties-common
-
-RUN add-apt-repository ppa:git-core/ppa -y && \ 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends software-properties-common && \
+    add-apt-repository ppa:git-core/ppa -y && \ 
     apt-get update && \
     apt-get install -y --no-install-recommends git && \
     rm -rf /var/lib/apt/lists/*
