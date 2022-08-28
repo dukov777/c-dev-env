@@ -90,15 +90,15 @@ WORKDIR /app
 
 # ---------------------------------------------------------
 
-FROM development AS compile
-RUN git clone git@gitlab.endurosatlab.com:k-band-transceiver/application-layer/LunarOutpostGateWay.git
-RUN cd LunarOutpostGateWay && \
-    git submodule init && \ 
-    git submodule update && \
-    mkdir build && \
-    cd build && \
-    cmake .. && \
-    make
+# FROM development AS compile
+# RUN git clone git@gitlab.endurosatlab.com:k-band-transceiver/application-layer/LunarOutpostGateWay.git
+# RUN cd LunarOutpostGateWay && \
+#     git submodule init && \ 
+#     git submodule update && \
+#     mkdir build && \
+#     cd build && \
+#     cmake .. && \
+#     make
 
 USER root
 ENTRYPOINT [ "/bin/zsh" ]
