@@ -19,3 +19,13 @@ docker build -t ImageNameXYZ --build-arg SSH_PRIVATE_KEY="$(cat ~/.ssh/id_ed2551
 ## Specifing Dockerfile ##
 
 docker build **-f ./lunar-conteiner-dev-env/Dockerfile** -t c-dev-env-1 --build-arg SSH_PRIVATE_KEY="$(cat ~/.ssh/id_ed25519)" --build-arg SSH_PUBLIC_KEY="$(cat ~/.ssh/id_ed25519.pub)" --build-arg KNOWN_HOSTS="$(cat ~/.ssh/known_hosts)"  .
+
+# Steps to build project #
+
+docker build --target development -t c-dev-env . 
+
+docker run --mount type=bind,source="$(pwd)/project",target=/app/ -it --rm c-dev-env
+
+Open VS Code
+Connect to container
+
