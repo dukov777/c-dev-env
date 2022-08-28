@@ -1,6 +1,6 @@
 # ---------------------------------------------------------
 
-FROM ubuntu:focal AS build
+FROM ubuntu:jammy AS build
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN=true
@@ -21,7 +21,6 @@ RUN apt-get clean && \
     xz-utils \
     gnupg \
     ca-certificates \
-    python-dev \
     lsb-release && \
     rm -rf /var/lib/apt/lists/* && \
     locale-gen en_US.UTF-8
