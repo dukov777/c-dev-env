@@ -15,6 +15,8 @@ RUN apt-get clean && \
     locales \
     build-essential \
     curl \
+    ssh \
+    zip \
     wget \
     apt-transport-https \
     apt-utils \
