@@ -18,7 +18,7 @@ docker build -t ImageNameXYZ --build-arg SSH_PRIVATE_KEY="$(cat ~/.ssh/id_ed2551
 
 ## Specifing Dockerfile ##
 
-docker build **-f ./lunar-conteiner-dev-env/Dockerfile** -t c-dev-env-1 --build-arg SSH_PRIVATE_KEY="$(cat ~/.ssh/id_ed25519)" --build-arg SSH_PUBLIC_KEY="$(cat ~/.ssh/id_ed25519.pub)" --build-arg KNOWN_HOSTS="$(cat ~/.ssh/known_hosts)"  .
+docker build **-f ./conteiner-dev-env/Dockerfile** -t c-dev-env-1 --build-arg SSH_PRIVATE_KEY="$(cat ~/.ssh/id_ed25519)" --build-arg SSH_PUBLIC_KEY="$(cat ~/.ssh/id_ed25519.pub)" --build-arg KNOWN_HOSTS="$(cat ~/.ssh/known_hosts)"  .
 
 # Steps to build project #
 
